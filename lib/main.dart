@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 import 'package:english_words/english_words.dart';
-import 'package:kana_kit/kana_kit.dart';
+// import 'package:kana_kit/kana_kit.dart';
 import 'package:flutter/material.dart';
 
 void main() {
