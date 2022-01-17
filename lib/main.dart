@@ -2,6 +2,8 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+import 'package:english_words/english_words.dart';
+import 'package:kana_kit/kana_kit.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,14 +15,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final wordPair = WordPair.random();
     return MaterialApp(
       title: 'Welcome to Flutter',
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Welcome to Flutter'),
         ),
-        body: const Center(
-          child: Text('Hello8 World'),
+        body: Center(
+          child: Text(wordPair.asPascalCase),
         ),
       ),
     );
